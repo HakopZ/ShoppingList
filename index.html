@@ -6,11 +6,7 @@
 <body>
     <label for="Name">Name Of Item</label>
     <br>
-<<<<<<< HEAD
-    <input type="text" id="Name" on>
-=======
     <input type="text" id="Name">
->>>>>>> 20ae585... Done with shopping list
     <br>
     <label for="Price">Price Of Item</label>
     <br>
@@ -18,8 +14,6 @@
     <br>
     <button type="button" onclick="AddToList();">Add</button>
     <br>
-<<<<<<< HEAD
-=======
     <br>
     <label for="Remove Name">Name For Remove</label>
     <br>
@@ -31,19 +25,10 @@
     <br>
     <br>
     <button type="button" onclick="ClearList();">Clear List</button>
->>>>>>> 20ae585... Done with shopping list
     <div id="List">
     </div>
 </body>
 <script>
-<<<<<<< HEAD
-    let Ls = [];
-    function AddToList()
-    {
-        let output = document.getElementById("List");
-
-        Ls.push();
-=======
 
     let Ls = [];
     function ClearList()
@@ -66,7 +51,7 @@
 
     function removeItem(array, item){
         for(let i of array){
-            if(i.key==item){
+            if(i.key===item){
                 array.splice(array.indexOf(i),1);
                 break;
             }
@@ -85,11 +70,8 @@
     }
     function RemoveFromList()
     {
-        let Name = document.getElementById("Remove Name")
+        let Name = document.getElementById("Remove Name");
         removeItem(Ls, Name.value);
-
->>>>>>> 20ae585... Done with shopping list
     }
-
 </script>
 </html>
